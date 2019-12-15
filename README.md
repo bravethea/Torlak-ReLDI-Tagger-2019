@@ -31,7 +31,7 @@ torsr.lemma_freq
 torsr.msd.model
 torsr.train
 ```
-Another file necessary for using the tagger is `torsr.marisa`, which is too large to be uploaded to GitHub, and needs to be created by training the tagger as explained below OR downloaded [here](https://drive.switch.ch/index.php/s/M2gFUIDpyQu1mJe).
+Another file necessary for using the tagger is `torsr.marisa`, which is too large to be uploaded to GitHub, and needs to be created by training the tagger as explained below OR downloaded [here](https://drive.switch.ch/index.php/s/FcjizszEoVtO1l5).
 
 You can create the `torsrLex.gz` file used for training and referenced throughout the text that follows, by merging `torLex` file and the [Serbian lexicon srLex_v1.2](https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1073/srLex_v1.2.gz).
 
