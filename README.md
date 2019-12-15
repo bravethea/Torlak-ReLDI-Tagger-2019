@@ -1,4 +1,4 @@
-# Part of speech tagger and a lemmatizer for Torlak
+# Part of speech tagger and lemmatizer for Torlak
 
 Custom model of the [ReLDI tagger](https://github.com/clarinsi/reldi-tagger) adapted for Torlak dialect.
 
