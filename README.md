@@ -1,6 +1,7 @@
 # Part of speech tagger and lemmatizer for Torlak
 
-Custom model of the [ReLDI tagger](https://github.com/clarinsi/reldi-tagger) adapted for Torlak dialect.(The instructions are adapted based on the original ones.)
+Custom model of the [ReLDI tagger](https://github.com/clarinsi/reldi-tagger) adapted for Torlak dialect.
+(The instructions are adapted based on the original ones.)
 
 Python version 2.7
 
