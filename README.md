@@ -1,4 +1,8 @@
-# Part of speech tagger and lemmatizer for Torlak
+# Part of speech tagger and lemmatizer for Torlak <a><img src="https://traceba.net/wp-content/uploads/2019/06/TraCeBa-logo-L.png" width="150" align="right" title="hover text"></a>
+
+
+
+
 
 Custom model of the [ReLDI tagger](https://github.com/clarinsi/reldi-tagger) adapted for Torlak dialect.
 
