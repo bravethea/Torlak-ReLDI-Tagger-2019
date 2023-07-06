@@ -114,6 +114,7 @@ dedava	Ncmsn_v	deda
 ```
 
 The text can be processed using the tokenizer, as explained in the original instructions for the ReLDI tagger. Bear in mind that the togenizer from the ReLDI tagger package has not been adapted to parse Torlak transcripts. It works for written standard BKMS or Slovene.
+Update July 2023 - Tokenizer is missing from the original Reldi repository.
 
 ## Training the `torsr` model 
 
