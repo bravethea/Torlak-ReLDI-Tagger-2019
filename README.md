@@ -99,10 +99,10 @@ dedava	Ncmsn_v	deda
 .	Z	.
 ```
 
-You can also send the tokenized verticalized file to be tagged to stdin, as in the example below,and optionally redirect the output to another file using `> newfile.txt`:
+You can also use a tokenized verticalized file as input be tagged, as in the example below,:
 
 ```
-$ cat file.txt | ./tagger.py torsr -l > newfile.txt
+$ cat file.txt | ./tagger.py torsr -l
 u	Sa	u
 selo	Ncnsa	selo
 mi	Pp1-pn	mi
@@ -111,6 +111,12 @@ ja	Pp1-sn	ja
 i	Cc	i
 dedava	Ncmsn_v	deda
 .	Z	.
+```
+
+Uout can also output the results  to another file using `> newfile.txt`:
+
+```
+$ cat file.txt | ./tagger.py torsr -l > newfile.txt
 ```
 
 The text can be processed using the tokenizer, as explained in the original instructions for the ReLDI tagger. Bear in mind that the togenizer from the ReLDI tagger package has not been adapted to parse Torlak transcripts. It works for written standard BKMS or Slovene.
