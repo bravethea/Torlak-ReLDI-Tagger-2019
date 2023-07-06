@@ -39,7 +39,7 @@ Another file necessary for using the tagger is `torsr.marisa`, which is too larg
 
 You can create the `torsrLex.gz` file used for training and referenced throughout the text that follows, by merging `torLex` file and the [Serbian lexicon srLex_v1.2](https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1073/srLex_v1.2.gz).
 
-## Modifying the `tagger.py` from the script to include Torlak
+## Modifying the `tagger.py` to include Torlak
 
 In order to run `tagger.py` with the Torlak files containing `torsr` in the title, you first need to add the Torlak language code to the list of possible language code arguments in the `tagger.py` script. To do so, change the following line from the original script:
 ```
@@ -127,6 +127,19 @@ Update July 2023 - Tokenizer is missing from the original Reldi repository.
 In case you want to train the Torlak tagger, you can use the `torsr.train` and `torsrLex.gz` files or a different, modified input. As stated in the ReLDI Taggger instructions, the input files need to be in "in the one-token-per-line, empty-line-as-sentence-boundary format. The tagger training data should be, with the token, lemma and the tag separated by a tab." See `torsr.train` file as an example. 
 
 Once you have the necessary file in the required format, you may proceed with the training based on the ReLDI tagger instructions and using the adapted commands for the `torsr` model.
+
+### Modifying the `train_tagger.py` and and `train_lemmatizer.py` from to include Torlak
+
+In order to run `train_tagger.py` and `train_lemmatizer.py` with the Torlak files containing `torsr` in the title, you first need to add the Torlak language code to the list of possible language code arguments in the `tagger.py` script. To do so, change the following line from the original script:
+```
+parser.add_argument('lang', help='language of the text', choices=['sl', 'sl.ns', 'sl.ns.true', 'sl.ns.lower', 'hr', 'sr'])
+```
+so that the list of possible choices contains `torsr`, as follows:
+
+```
+parser.add_argument('lang', help='language of the text', choices=['sl', 'sl.ns', 'sl.ns.true', 'sl.ns.lower', 'hr', 'sr', 'torsr'])
+```
+
 
 ### Preparing the lexicon trie used by the tagger
 
